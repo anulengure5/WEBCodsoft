@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-color:darkgray;
+}
+.head {
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    /* background-color:#dbd2d2; */
+    background-color: black;
+    padding: 35px 30px;
+    max-width: 400px;
+    margin:50px auto;
+    border: 2px solid black;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.5) ;
+                  /* x ,y ,blurr,color */
+
+    border-radius: 8px;
+}
+
+
+#result {
+    width:100%;
+    background-color:aqua;
+    padding:10px;
+    font-size: 24px;
+    border: none;
+    box-shadow:4px 5px 5px white inset;
+    border-radius: 4px;
+}
+
+
+.buttons{
+    /* background-color: aliceblue; */
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+/* 4 columns 1fr fraction unit */
+ gap: 10px;
+ padding: 35px 0px 15px 0px;
+
+}
+
+button {
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    box-shadow:2px 3px 5px white ;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: background-color 0.2s ease;
+
+}
+
+button:hover {
+ background-color:greenyellow;
+}
+
+
+.clear {
+    background-color: red;
+    color:white;
+}
+
+.number,.decimal {
+    background-color:#ffffff;
+}
+
+.operator {
+    background-color: #1388ef;
+    color: white;
+}
+
+.equals {
+    background-color: #01ff70;
+    grid-row:span 3;
+
+}
